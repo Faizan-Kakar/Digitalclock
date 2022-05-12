@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="index.js">
+     -->
+     <script src="index.js"></script>
+</head>
+<body>
+
+        <div class="Dig_Alarm">
+
+            <div id="Digital"> </div>
+
+            <h3>Set alarm</h3>
+
+            <form>
+
+                <div class="inputs">
+
+                    <input
+                     type="number"
+                     placeholder="hours"
+                     min="1"
+                     max="12"
+                     required>
+        
+                    <input
+                     type="number"
+                     placeholder="minute"
+                     min="1"
+                     max="60"
+                     required>
+        
+                    <input
+                     type="number"
+                     placeholder="second"
+                     min="1"
+                     max="60"
+                     required>
+
+                     <select name="zone" required>
+                        <option value="" selected disabled>zone</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                     </select>
+                     <button style="margin-top: 10px">submit"</button>
+                    </form>
+
+                    <audio id="alarm-audio"></audio>
+                </div>
+        </div>
+    
+</body>
+</html>
